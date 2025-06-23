@@ -25,7 +25,7 @@ html {
     left: 0;
     right: 0;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     padding: 2rem 9%;
     z-index: 1000;
     background-color: red;
@@ -70,3 +70,37 @@ html {
     display: none;
 }
 
+.topo-site .carrinho {
+    width: 35rem;
+    background-color: white;
+    border-radius: .5rem;
+    box-shadow: 0 0.5rem 1rem rgb(0, 0, 0, 0.1);
+    position: absolute;
+    top: 115%;
+    right:  -105%;
+    padding: 2rem;
+}
+
+.topo-site .carrinho.active {
+    right: 2rem;
+    transition: .4s linear;
+}
+
+.topo-site .carrinho .box {
+    position: relative;
+    display: flex;
+    margin-bottom: 1.5rem;
+    gap: 1.5rem;
+    align-items: center;
+
+}
+
+.topo-site .carrinho .box .fa-times {
+    position: absolute;
+    top: 50%;
+    right: 2rem;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
