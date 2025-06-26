@@ -285,7 +285,8 @@ html {
     height: 4.5rem;
     width: 4.5rem;
     line-height: 4.5rem;
-    margin-left: 1.5rem;
+    margin-left: 5rem;
+    margin-right: 1.5rem;
     color: red;
     border: .1rem solid red;
     transform:  translate(-50%) rotate(45deg);
@@ -302,4 +303,71 @@ html {
     color: white;
     background-color: red;
     
+}
+
+@media (max-width: 991px) {
+    html{
+        font-size: 55%;
+    }
+
+    section {
+        padding: 3rem;
+    }
+
+    .topo-site {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .topo-site .icons #menu {
+        display: inline-block;
+    }
+
+    .topo-site .menu-site {
+        position: absolute;
+        top: 110%;
+        right: 110%;
+        width: 30rem;
+        background-color: white;
+        border-radius: .5rem;
+        box-shadow: 0 .5rem 1rem rgb(0, 0, 0, 0.1);
+    }
+
+    .topo-site .menu-site.active {
+        right: 2rem;
+        transition: .4s linear;
+    }
+
+    .topo-site .menu-site.active a {
+        display: block;
+        font-size: 2rem;
+        margin: 2rem 2.5rem;
+    }
+
+    .msflix-destaque .slide .content h3 {
+        font-size: 4rem;
+    }
+
+    .topo-site .menu-site a {
+        color: #000;
+        border-bottom: 1px solid #000;
+        border-bottom-style: dotted;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+
+    .msflix-destaque .slide .content h3 {
+        font-size: 3.5rem;
+    }
+
+    .topo-site .menu-site a {
+        color: #000;
+        border-bottom: 1px solid #000;
+        border-bottom-style: dotted;
+    }
 }

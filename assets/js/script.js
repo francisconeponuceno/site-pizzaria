@@ -14,7 +14,7 @@ document.querySelector('#login').onclick = () => {
 
 var swiper = new Swiper('.home-slider', {
     autoplay:{
-        delay: 2500,
+        delay: 5000,
         disableOnInteraction: false,
     },
     grapCursor: true,
@@ -23,5 +23,6 @@ var swiper = new Swiper('.home-slider', {
     navigation: {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
-        },
+     },
 })
+
