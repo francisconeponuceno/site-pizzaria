@@ -18,6 +18,11 @@ html {
     scroll-behavior: smooth;
 }
 
+section {
+    padding: 3rem 7%;
+}
+
+/* INICIO ESTILO BOTÃO DO SITE*/
 .btn {
     display: inline-block;
     font-size: 1.7rem;
@@ -34,7 +39,10 @@ html {
     background-color: red;
     color: white;
 }
+/* FIM ESTILO BOTÃO DO SITE*/
 
+
+/* ICINIO ESTILO TOPO SITE*/
 .topo-site {
     display: flex;
     position: fixed;
@@ -207,7 +215,10 @@ html {
     text-align: center;
     margin: 1rem 0;
 }
+/* FIM ESTILO TOPO SITE*/
 
+
+/* INICIO ESTILO DESTAQUE*/
 .msflix-destaque {
     padding: 0;
 }
@@ -222,7 +233,7 @@ html {
 }
 
 .msflix-destaque .slide .content {
-    /*display: none;*/
+    display: none;
     width: 60rem;
     text-align: center;
 }
@@ -304,7 +315,18 @@ html {
     background-color: red;
     
 }
+/* FIM ESTILO DESTAQUE*/
 
+/* DESTAQUE BOX CONTAINER*/
+.destaque .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 2rem;
+    
+
+}
+
+/*TABLET*/
 @media (max-width: 991px) {
     html{
         font-size: 55%;
@@ -356,6 +378,10 @@ html {
     }
 }
 
+/* FIM TABLET*/
+
+
+/*CELULAR*/
 @media (max-width: 450px) {
     html {
         font-size: 50%;
@@ -371,3 +397,6 @@ html {
         border-bottom-style: dotted;
     }
 }
+/* FIM CELULAR*/
+
+
