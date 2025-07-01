@@ -503,9 +503,11 @@ section {
     transform: scale(1.1);
 }
 
+/*BLOG*/
 
-
-
+.blogs {
+    
+}
 
 /*TABLET*/
 @media (max-width: 991px) {
