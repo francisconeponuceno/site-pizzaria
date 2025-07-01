@@ -448,6 +448,62 @@ section {
     text-decoration: line-through;
 }
 
+/*EMPRESA*/
+.empresa {
+    background-color: red;
+}
+
+.empresa .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    background-color: red;
+    align-items: center;
+}
+
+.empresa .row .empresa-img {
+    flex: 1 1 32rem;
+}
+
+.empresa .row .empresa-img img {
+    width: 100%;
+    box-shadow: 0 .5rem 1rem rgb(0, 0, 0, 0.1);
+}
+
+.empresa .row .content {
+    flex: 1 1 50rem;
+}
+
+.empresa .row .content h3 {
+    font-size: 3.5rem;
+    color: white;
+}
+
+.empresa .row .content h3 span {
+    color: yellow;
+}
+
+.empresa .row .content p {
+    font-size: 1.6rem;
+    color: white;
+    padding: 2rem 0;
+    line-height: 2;
+}
+
+.empresa .btn {
+    color: white;
+    border: 1px solid white;
+    transition: .4s linear;
+}
+
+.empresa .btn:hover {
+    background-color: #fffb00;
+    color: #130f40;
+    border: 1px solid #130f40;
+    transform: scale(1.1);
+}
+
+
 
 
 
