@@ -34,3 +34,15 @@ var swiper = new Swiper('.home-slider', {
      },
 })
 
+var swiper = new Swiper('.menu-slider', {
+    grapCursor: true,
+    loop:true,
+    autoheight:true,
+    centeredSlides:true,
+    spaceBetwin:20,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+  },
+})
+
