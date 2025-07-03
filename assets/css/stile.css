@@ -722,6 +722,7 @@ section {
     background-color: red;
     margin-bottom: 3rem;
     text-align: center;
+    cursor: pointer;
 }
 
 .menu .slider .box-container {
