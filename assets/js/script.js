@@ -12,12 +12,19 @@ document.querySelector('#login').onclick = () => {
     carrinho.classList.remove('active')
 }
 
+//MENU RESPONSIVO
+let menuResponsivo = document.querySelector('.menu-site')
+document.querySelector('#menu').onclick = ()=> {
+    menuResponsivo.classList.toggle('.active')
+}
+
+
+
+
 window.onscroll = () => {
     login.classList.remove('active');
     carrinho.classList.remove('active')
 }
-
-
 
 
 var swiper = new Swiper('.home-slider', {
