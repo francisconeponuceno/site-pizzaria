@@ -1,21 +1,23 @@
 let carrinho = document.querySelector('.carrinho');
-
 document.querySelector('#cart').onclick = () => {
-    carrinho.classList.toggle('active');
     login.classList.remove('active');
+    menuResponsivo.classList.remove('active')
+    carrinho.classList.toggle('active');
 }
 
 let login = document.querySelector('.login-form');
-
 document.querySelector('#login').onclick = () => {
-    login.classList.toggle('active');
     carrinho.classList.remove('active')
+    menuResponsivo.classList.remove('active')
+    login.classList.toggle('active');
 }
 
 //MENU RESPONSIVO
 let menuResponsivo = document.querySelector('.menu-site')
 document.querySelector('#menu').onclick = ()=> {
-    menuResponsivo.classList.toggle('.active')
+    carrinho.classList.remove('active')
+    login.classList.remove('active');
+    menuResponsivo.classList.toggle('active')
 }
 
 
@@ -24,6 +26,7 @@ document.querySelector('#menu').onclick = ()=> {
 window.onscroll = () => {
     login.classList.remove('active');
     carrinho.classList.remove('active')
+    menuResponsivo.classList.remove('active')
 }
 
 
